@@ -6,16 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>webpack+react+phonegap | 郭郭的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="基于webpack+react+phonegap开发APP以前搞过ionic开发app,最近这一段时间比较闲,利用工作和业余高了一套新的跨平台APP开发模式.ionic组件很全,开发速度快,但它是重量级武器,用于移动端性能是它的瓶颈,react是fecebook开源的一个前端V层框架,他采用单向数据流,虚拟DOM等思想提高性能,它是一个轻量级的框架,更适合移动端.react问世不就fecebook">
+  <meta name="description" content="基于webpack+react+phonegap开发APP1. run起来关于webpack,react,phonegap,react-router,redux,weui,es6每一种技术文档资料都很多.你可以做个击破.这里我只讲到你下载了我的项目直接能跑起来本人亲试能跑起来,更深的层次自己去摸索吧.
+生产开发
+npm install -g webpack webpack-dev-server c">
 <meta property="og:type" content="article">
 <meta property="og:title" content="webpack+react+phonegap">
 <meta property="og:url" content="https://AbingManling.github.io/2016/07/08/react-webpack-phonegap/index.html">
 <meta property="og:site_name" content="郭郭的博客">
-<meta property="og:description" content="基于webpack+react+phonegap开发APP以前搞过ionic开发app,最近这一段时间比较闲,利用工作和业余高了一套新的跨平台APP开发模式.ionic组件很全,开发速度快,但它是重量级武器,用于移动端性能是它的瓶颈,react是fecebook开源的一个前端V层框架,他采用单向数据流,虚拟DOM等思想提高性能,它是一个轻量级的框架,更适合移动端.react问世不就fecebook">
-<meta property="og:updated_time" content="2016-07-12T08:42:07.000Z">
+<meta property="og:description" content="基于webpack+react+phonegap开发APP1. run起来关于webpack,react,phonegap,react-router,redux,weui,es6每一种技术文档资料都很多.你可以做个击破.这里我只讲到你下载了我的项目直接能跑起来本人亲试能跑起来,更深的层次自己去摸索吧.
+生产开发
+npm install -g webpack webpack-dev-server c">
+<meta property="og:updated_time" content="2016-07-12T09:21:18.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="webpack+react+phonegap">
-<meta name="twitter:description" content="基于webpack+react+phonegap开发APP以前搞过ionic开发app,最近这一段时间比较闲,利用工作和业余高了一套新的跨平台APP开发模式.ionic组件很全,开发速度快,但它是重量级武器,用于移动端性能是它的瓶颈,react是fecebook开源的一个前端V层框架,他采用单向数据流,虚拟DOM等思想提高性能,它是一个轻量级的框架,更适合移动端.react问世不就fecebook">
+<meta name="twitter:description" content="基于webpack+react+phonegap开发APP1. run起来关于webpack,react,phonegap,react-router,redux,weui,es6每一种技术文档资料都很多.你可以做个击破.这里我只讲到你下载了我的项目直接能跑起来本人亲试能跑起来,更深的层次自己去摸索吧.
+生产开发
+npm install -g webpack webpack-dev-server c">
   
     <link rel="alternative" href="/atom.xml" title="郭郭的博客" type="application/atom+xml">
   
@@ -224,8 +230,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="基于webpack-react-phonegap开发APP"><a href="#基于webpack-react-phonegap开发APP" class="headerlink" title="基于webpack+react+phonegap开发APP"></a>基于webpack+react+phonegap开发APP</h2><p>以前搞过ionic开发app,最近这一段时间比较闲,利用工作和业余高了一套新的跨平台APP开发模式.<br>ionic组件很全,开发速度快,但它是重量级武器,用于移动端性能是它的瓶颈,<br>react是fecebook开源的一个前端V层框架,他采用单向数据流,虚拟DOM等思想提高性能,它是一个轻量级的框架,更适合移动端.<br>react问世不就fecebook有推出了react-native基于前端开发原生APP,现在android,ios支持,<br>它和phonegap的原理又不一样,phonegap就是封装webview并实现js和原生代码的相互调用,提供原生代码封装成API给js调用.<br>react-native的原理应该类似与cocos吧.关于这三个框架想了解更多,请去官网…<br>性能自然是react-native最好,但是听说react-native上手很难哦,关于我之前是搞APP学了那么多phonegap插件,现在是做前端,<br>我更愿意用react+phonegap开发app.</p>
-<h3 id="run起来"><a href="#run起来" class="headerlink" title="run起来"></a>run起来</h3><p>关于<strong>webpack,react,phonegap,react-router,redux,weui,es6</strong>每一种技术文档资料都很多.你可以做个击破.这里我只讲到<strong>你下载了我的项目直接能跑起来本人亲试能跑起来</strong>,更深的层次自己去摸索吧.</p>
+        <h1 id="基于webpack-react-phonegap开发APP"><a href="#基于webpack-react-phonegap开发APP" class="headerlink" title="基于webpack+react+phonegap开发APP"></a>基于webpack+react+phonegap开发APP</h1><h2 id="1-run起来"><a href="#1-run起来" class="headerlink" title="1. run起来"></a>1. run起来</h2><p>关于<strong>webpack,react,phonegap,react-router,redux,weui,es6</strong>每一种技术文档资料都很多.你可以做个击破.这里我只讲到<strong>你下载了我的项目直接能跑起来本人亲试能跑起来</strong>,更深的层次自己去摸索吧.</p>
 <h3 id="生产开发"><a href="#生产开发" class="headerlink" title="生产开发"></a>生产开发</h3><ol>
 <li>npm install -g webpack webpack-dev-server cordova-hot-code-push-cli    //-g 的东西要安装完</li>
 <li>git clone <a href="https://github.com/AbingManling/react_webpack_phonegap" target="_blank" rel="external">https://github.com/AbingManling/react_webpack_phonegap</a> &amp;&amp; cd react_webpack_phonegap</li>
@@ -236,6 +241,7 @@
 <li>npm run build 打包<br>2.<br>cd node_server/static &amp;&amp; sudo cordova-hcp server </li>
 <li>修改chcp.json和chcp.manifest两个文件 具体phonegap搭建请到<a href="http://www.phonegap100.com/" target="_blank" rel="external">http://www.phonegap100.com/</a>  cordova热更新<a href="http://www.phonegap100.com/article-491-1.html" target="_blank" rel="external">文档</a> 弄不好看树根的视频</li>
 </ol>
+<h2 id="我的思路"><a href="#我的思路" class="headerlink" title="我的思路"></a>我的思路</h2><p>以前搞过ionic开发app,最近这一段时间比较闲,利用工作和业余高了一套新的跨平台APP开发模式.<br>ionic组件很全,开发速度快,但它是重量级武器,用于移动端性能是它的瓶颈,<br>react是fecebook开源的一个前端V层框架,他采用单向数据流,虚拟DOM等思想提高性能,它是一个轻量级的框架,更适合移动端.<br>react问世不就fecebook有推出了react-native基于前端开发原生APP,现在android,ios支持,<br>它和phonegap的原理又不一样,phonegap就是封装webview并实现js和原生代码的相互调用,提供原生代码封装成API给js调用.<br>react-native的原理应该类似与cocos吧.关于这三个框架想了解更多,请去官网…<br>性能自然是react-native最好,但是听说react-native上手很难哦,关于我之前是搞APP学了那么多phonegap插件,现在是做前端,<br>我更愿意用react+phonegap开发app.</p>
 
       
     </div>
