@@ -167,6 +167,8 @@ a {
   outline-width: 0;
   color: #258fb8;
   outline: none;
+  white-space: normal;
+  word-break: break-word;
 }
 .alignleft {
   float: left;
