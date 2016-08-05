@@ -2273,8 +2273,6 @@ pre .css ~ * .id {
   border-bottom: 1px dotted #666;
   padding-bottom: 13px;
   line-height: 20px;
-  white-space: normal;
-  word-break: break-word;
 }
 #viewer-box .viewer-box-l .viewer-div:last-child {
   border-bottom: none;
