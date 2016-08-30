@@ -114,7 +114,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/angularjs-gulp/" style="font-size: 10px;">angularjs gulp</a> <a href="/tags/es6/" style="font-size: 10px;">es6</a> <a href="/tags/phonegap/" style="font-size: 20px;">phonegap</a> <a href="/tags/react/" style="font-size: 10px;">react</a> <a href="/tags/react-router/" style="font-size: 10px;">react-router</a> <a href="/tags/redux/" style="font-size: 10px;">redux</a> <a href="/tags/webpack/" style="font-size: 10px;">webpack</a> <a href="/tags/weui/" style="font-size: 10px;">weui</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/设计模式/" style="font-size: 10px;">设计模式</a>
+						<a href="/tags/angularjs-gulp/" style="font-size: 10px;">angularjs gulp</a> <a href="/tags/css-html/" style="font-size: 10px;">css html</a> <a href="/tags/es6/" style="font-size: 10px;">es6</a> <a href="/tags/phonegap/" style="font-size: 20px;">phonegap</a> <a href="/tags/react/" style="font-size: 10px;">react</a> <a href="/tags/react-router/" style="font-size: 10px;">react-router</a> <a href="/tags/redux/" style="font-size: 10px;">redux</a> <a href="/tags/webpack/" style="font-size: 10px;">webpack</a> <a href="/tags/weui/" style="font-size: 10px;">weui</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/设计模式/" style="font-size: 10px;">设计模式</a>
 					</div>
 				</section>
 				
@@ -188,6 +188,84 @@
 
       <div class="body-wrap">
   
+    <article id="post-css居中布局方案(网易)" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/08/30/css居中布局方案(网易)/" class="article-date">
+  	<time datetime="2016-08-30T05:35:11.000Z" itemprop="datePublished">2016-08-30</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/08/30/css居中布局方案(网易)/">css居中布局方案(网易)</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="css各种居中-以下面html代码为例"><a href="#css各种居中-以下面html代码为例" class="headerlink" title="css各种居中,以下面html代码为例"></a>css各种居中,以下面html代码为例</h3>   <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">div class="parent"&gt;</span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"child"</span>&gt;</span>DEMO<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>   一. 水平居中(父子容器水平长度都不确定)</p>
+<blockquote>
+<p>方案一:<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.parent&#123;</span><br><span class="line">    text-align: center;</span><br><span class="line">&#125;</span><br><span class="line">.child&#123;</span><br><span class="line">    display: inline-block;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>方案二: 该方案兼容性好,换成table标签即可支持旧版本IE<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.child&#123;</span><br><span class="line">    display: table;</span><br><span class="line">    margin: 0 auto;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>方案三<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">.parent&#123;height:1.5em;&#125;</span><br><span class="line">.parent&#123;</span><br><span class="line">    position: relative;</span><br><span class="line">&#125;</span><br><span class="line">.child&#123;</span><br><span class="line">    position: absolute;</span><br><span class="line">    left: 50%;</span><br><span class="line">    transform: translateX(-50%);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>方案四<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.parent&#123;</span><br><span class="line">	display: flex;</span><br><span class="line">	justify-content: center;</span><br><span class="line">&#125;</span><br><span class="line">.child&#123;</span><br><span class="line">	margin: 0 auto;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p>   二. 垂直居中(父子容器垂直长度都不确定)</p>
+<blockquote>
+<p>方案一: 该方案兼容性好,换成table标签即可支持旧版本IE<br>     <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">.parent&#123;</span><br><span class="line">    width:4em;</span><br><span class="line">    height:500px;</span><br><span class="line">&#125;</span><br><span class="line">.child&#123;</span><br><span class="line">    width:100%;</span><br><span class="line">&#125;</span><br><span class="line">.parent&#123;</span><br><span class="line">    display: table-cell;</span><br><span class="line">    vertical-align: middle;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>方案二:<br>     <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">.parent&#123;</span><br><span class="line">    width:4em;</span><br><span class="line">    height:500px;</span><br><span class="line">&#125;</span><br><span class="line">.child&#123;</span><br><span class="line">    width:100%;</span><br><span class="line">&#125;</span><br><span class="line">    </span><br><span class="line">.parent&#123;</span><br><span class="line">    position: relative;</span><br><span class="line">&#125;</span><br><span class="line">.child&#123;</span><br><span class="line">    position: absolute;</span><br><span class="line">    top: 50%;</span><br><span class="line">    transform: translateY(-50%);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>方案三:<br>     <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">.parent&#123;</span><br><span class="line">    width:4em;</span><br><span class="line">    height:500px;</span><br><span class="line">&#125;</span><br><span class="line">.child&#123;</span><br><span class="line">    width:100%;</span><br><span class="line">&#125;</span><br><span class="line">.parent&#123;</span><br><span class="line">    display: flex;</span><br><span class="line">    align-items: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p>   三. 水平垂直居中(父子容器水平长度垂直长度都不确定)</p>
+<blockquote>
+<p>方案一: 该方案兼容性好,换成table标签即可支持旧版本IE<br>     <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">.parent&#123;</span><br><span class="line">    width:200px;</span><br><span class="line">    height:300px;</span><br><span class="line">&#125;</span><br><span class="line">.parent&#123;</span><br><span class="line">    text-align: center;</span><br><span class="line">    display: table-cell;</span><br><span class="line">    vertical-align: middle;</span><br><span class="line">&#125;</span><br><span class="line">.child&#123;</span><br><span class="line">    display: inline-block;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>方案二:<br>     <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">.parent&#123;</span><br><span class="line">    position: relative;</span><br><span class="line">&#125;</span><br><span class="line">.child&#123;</span><br><span class="line">    position: absolute;</span><br><span class="line">    left: 50%;</span><br><span class="line">    top: 50%;</span><br><span class="line">    transform: translate(-50%,-50%);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>方案三:<br>     <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">.parent&#123;</span><br><span class="line">    width:200px;</span><br><span class="line">    height:300px;</span><br><span class="line">&#125;</span><br><span class="line">.parent&#123;</span><br><span class="line">    display: flex;</span><br><span class="line">    justify-content: center;</span><br><span class="line">    align-items: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<h3 id="多列布局"><a href="#多列布局" class="headerlink" title="多列布局"></a>多列布局</h3><p><a href="/file/article/layout/muti_row_layout.rar">下载DEMO</a> </p>
+<h3 id="全屏布局"><a href="#全屏布局" class="headerlink" title="全屏布局"></a>全屏布局</h3><p><a href="/file/article/layout/full_screen_layout.rar">下载DEMO</a> </p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css-html/">css html</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-angularJS打包注意事项" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -205,7 +283,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/05/angularJS打包注意事项/">angularJS打包注意事项..md</a>
+      <a class="article-title" href="/2016/08/05/angularJS打包注意事项/">angularJS打包注意事项</a>
     </h1>
   
 
@@ -214,7 +292,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="打包规范"><a href="#打包规范" class="headerlink" title="打包规范"></a>打包规范</h3><p>   现在前端代码全面支持压缩了,压缩过后我们的核心js代码bootstrap.jsc从2.4M减少到1.1M.一方面商户后台的性能提高了,另一方面保护了前端代码的知识产权,保护了公司的资产.但是这里有两点需要注意,不然gulp压缩过后我们的代码报错或运行不起来.</p>
+        <h3 id="打包规范"><a href="#打包规范" class="headerlink" title="打包规范"></a>打包规范</h3><p>   代码上线药压缩前端代码.一方面商户后台的性能提高了,另一方面保护了前端代码的知识产权,保护了公司的资产.但是打包angularjs项目有两点需要注意,不然gulp压缩过后我们的代码报错或运行不起来.</p>
 <ol>
 <li><p>我们的controllers,services注入一定不要简写</p>
 <blockquote>
